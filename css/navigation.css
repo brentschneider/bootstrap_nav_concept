@@ -1,0 +1,173 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+Keep Padding Bottom for Footer
+*/
+
+	body {
+		padding-bottom: 20px;
+		font-size: 16px;
+	}
+
+/*-------------------------------------------
+ Add Banner above Navbar
+*/
+	#topnavbar {
+    margin: 0;
+	 }
+	#topnavbar.affix {
+	    position: fixed;
+	    top: 12px;
+	    width: 100%;
+	 }
+	#banner {
+	     background-color: #fff;
+			 width: 95%;
+
+			 padding: 8px;
+	 }
+
+	 #banner a {
+		 color: #333;
+		 display: inline;
+	 }
+
+	 #banner > .nav > li {
+		 display: inline;
+	 }
+
+	 #banner .navbar-nav > li > a {
+ 		padding: 10px 30px;
+ 	}
+
+/*-------------------------------------------
+ Position Brand / Logo to center of Nav
+*/
+
+.navbar-brand {
+			 transform: translateX(-50%);
+			 left: 50%;
+			 position: absolute;
+			 top: -20px;
+			 width: 100px; /* no height needed ... image will resize automagically */
+	  }
+.navbar {
+	 	background:rgba(92, 0, 20, 0.9);
+		border-radius: 0;
+		margin-bottom: 0;
+}
+.navbar-main li a {
+		 font-size: 2rem;
+		 color:#fff
+	 }
+
+
+/*-------------------------------------------
+ Jumbotron
+*/
+
+.jumbotron {
+  margin-bottom: 0;
+	top: 0;
+  background-color: #ededed;
+  background: url(../img/EWUArial.jpg) no-repeat center center scroll;
+  background-size: cover;
+  min-height: 450px;
+  color: #fff;
+}
+
+
+/*-------------------------------------------
+ Media queries
+ Collapse Navigation
+*/
+
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+      float: none;
+  }
+  .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+
+	#banner .navbar-left {
+		float: left !important;
+	}
+	#banner .navbar-right {
+		float: right  !important;
+	}
+
+	#banner .navbar-nav > li > a {
+		padding: 10px 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.audience {
+		display: none;
+  }
+}
+
+
+/*-------------------------------------------
+ Fonts
+ Museo via to Adobe Typekit Cloud
+*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "museo-slab",serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+}
+
+
+.EWU {
+	font-family: "museo-slab",serif;
+	font-weight: 700;
+	font-size: 2rem;
+}
